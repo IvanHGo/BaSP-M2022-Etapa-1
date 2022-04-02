@@ -1,0 +1,48 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+  'Helvetica Neue', sans-serif;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+}
+
+header{
+  position: fixed;
+  width: 1440px;
+  height: 80px;
+  background-color: #373867;
+}
+
+aside{
+  position: fixed;
+  top: 80px;
+  width: 343px;
+  height: 928px;
+  background-color: #cccccc;
+}
+
+main{
+  position: relative;
+  width: 1440px;
+  top: 300px;
+  left: 435px;
+}
+
+.header-radium{
+  color: #339966;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.header-rocket{
+  color: #99cc99;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.menu-bars{
+  position: fixed;
+  top: 100px;
+  left: 380px;
+}
