@@ -5,7 +5,7 @@ body {
 }
 
 a:link, a:visited, a:active {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 header {
@@ -25,7 +25,6 @@ aside {
 
 main {
   display: inline-block;
-  width: 900px;
   margin-top: 93px;
   margin-left: 340px;
   padding-top: 177px;
@@ -34,12 +33,14 @@ main {
 
 footer {
   display: inline-block;
-  width: 100%;
+  width: 15%;
   height: 96px;
   background-color: #D9D9E2;
   margin-top: 832px;
   margin-left: 340px;
 }
+
+/* header */
 
 .header-radium {
   color: #46A37C;
@@ -56,27 +57,64 @@ footer {
 .menu-bars {
   position: fixed;
   top: 100px;
-  left: 380px;
+  left: 350px;
   width: 40px;
   height: 40px;
 }
 
+/* aside */
+
+.side-menu{
+  font-size: 30px;
+}
+
+/* section-1 */
+
 .section-1 {
   display: inline-block;
+  padding: 5px;
 }
 
 h1 {
   font-size: 60px;
   line-height: 100px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .img-clock {
   float: right;
   width: 460px;
   height: 390px;
+  margin-left: 30px;
 }
 
-.side-menu{
-  font-size: 30px;
+.section-1 p{
+  padding: 20px;
+  padding-left: 0px;
+  text-align: left;
 }
+
+/* section-2 */
+
+.abc {
+  display: inline-block;
+  width: 45%;
+  padding: 10px;
+}
+
+/* all */
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 30px;
+  padding-left: 0px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  padding-left: 0px;
+}
+
