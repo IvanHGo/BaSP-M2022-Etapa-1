@@ -10,7 +10,7 @@ a:link, a:visited, a:active {
 
 header {
   position: fixed;
-  width: 100%;
+  width: 1300px;
   height: 80px;
   background-color: #373867;
 }
@@ -18,26 +18,26 @@ header {
 aside {
   position: fixed;
   top: 80px;
-  width: 340px;
+  width: 300px;
   height: 100%;
   background-color: #D9D9E2;
 }
 
 main {
   display: inline-block;
-  margin-top: 93px;
-  margin-left: 340px;
-  padding-top: 177px;
+  margin-top: 80px;
+  margin-left: 300px;
+  padding-top: 120px;
   padding-left: 92px;
 }
 
 footer {
   display: inline-block;
-  width: 100%;
+  width: 963px;
   height: 96px;
   background-color: #D9D9E2;
   margin-top: 832px;
-  margin-left: 340px;
+  margin-left: 300px;
 }
 
 /* header */
@@ -57,22 +57,55 @@ footer {
 .menu-bars {
   position: fixed;
   top: 100px;
-  left: 350px;
+  left: 330px;
   width: 40px;
   height: 40px;
 }
 
 /* aside */
 
-.side-menu{
+.aside {
+  padding: 40px 30px 40px 30px;
+}
+
+.aside-menu-text {
   font-size: 30px;
+  text-decoration: underline #AACE9B;
+  padding-bottom: 10px;
+}
+
+.aside-list {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.aside-contactus {
+  padding-top: 30px;
+}
+
+.aside-contactus-text {
+  font-size: 30px;
+  text-decoration: underline #AACE9B;
+}
+
+.h-line-aside {
+  height: 2px;
+  background-color: #373867;
+  opacity: 0.4;
+  border-radius: 10px;
 }
 
 /* section-1 */
 
 .section-1 {
   display: inline-block;
-  padding: 5px;
+}
+
+.section-1 p {
+  line-height: 30px;
+  padding: 20px;
+  padding-left: 0px;
+  text-align: left;
 }
 
 h1 {
@@ -83,18 +116,12 @@ h1 {
 
 .img-clock {
   float: right;
-  width: 460px;
-  height: 390px;
-  margin-left: 30px;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
 }
 
-.section-1 p{
-  padding: 20px;
-  padding-left: 0px;
-  text-align: left;
-}
-
-/* section-2 */
+/* section-2 and 3 */
 
 .block {
   display: inline-block;
@@ -110,7 +137,7 @@ h1 {
 .star-img {
   display: inline-block;
   padding: 20px;
-}
+  }
 
 /* all */
 
@@ -128,3 +155,14 @@ h3 {
   padding-left: 0px;
 }
 
+/* hr line */
+
+.h-line {
+  height: 2px;
+  background-color: #373867;
+  opacity: 0.4;
+  border-radius: 10px;
+  width: 820px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
