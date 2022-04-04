@@ -196,18 +196,24 @@
             <section>
                 <h2>Ask for information</h2>
                 <form>
-                    <div>
+                    <div class="personal-data">
                         <input type="text" name="name" placeholder="Name">
                         <input type="email" name="email" placeholder="Email">
                     </div>
                         <span>Contact area:</span>
                     <div>
-                        <input type="radio" name="contactarea" value="humanresourses">
-                        <label>Human Resourses</label>
-                        <input type="radio" name="contactarea" value="sistems">
-                        <label>Sistems</label>
-                        <input type="radio" name="contactarea" value="commercialization">
-                        <label>Commercialization</label>
+                        <div class="form-radio">
+                            <input type="radio" name="contactarea" value="humanresourses">
+                            <label>Human Resourses</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="contactarea" value="sistems">
+                            <label>Sistems</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="contactarea" value="commercialization">
+                            <label>Commercialization</label>
+                        </div>
                     </div>
                     <div>
                         <textarea name="message" rows="10" cols="60" placeholder="Enter your message">
