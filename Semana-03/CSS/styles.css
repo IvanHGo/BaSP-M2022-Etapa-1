@@ -10,7 +10,7 @@ a:link, a:visited, a:active {
 
 header {
   position: fixed;
-  width: 1300px;
+  width: 100%;
   height: 80px;
   background-color: #373867;
   z-index: 1;
@@ -34,11 +34,10 @@ main {
 
 footer {
   display: inline-block;
-  width: 963px;
+  width: 100%;
   height: 96px;
   background-color: #D9D9E2;
-  margin-top: 832px;
-  margin-left: 300px;
+  margin-top: 150px;
 }
 
 /* header */
@@ -88,7 +87,7 @@ footer {
 }
 
 .aside-contactus {
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 .aside-contactus-text {
@@ -109,7 +108,7 @@ footer {
   padding-bottom: 20px;
   font-size: 12px;
   line-height: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 address li {
@@ -190,7 +189,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-input:nth-child(2) {
+.personal-data input:nth-child(2) {
   margin-left: 50px;
 }
 
@@ -219,10 +218,94 @@ form span {
   padding-right: 225px;
 }
 
+textarea {
+  display: block;
+  width: 810px;
+  height: 150px;
+  margin-bottom: 20px;
+}
 
+textarea::placeholder {
+  padding-left: 10px;
+  filter: opacity(50%);
+}
+
+.submit {
+  display: inline-block;
+  background-color: #AACE9B;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 14px 36px;
+  border-radius: 5px;
+  border-width: 0;
+}
+
+.reset {
+  display: inline-block;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 12px 36px;
+  border-radius: 5px;
+  border-width: 2px;
+  margin: 0 0 10px 30px;
+}
+
+/* about us */
+
+.aboutus-text {
+  display: inline-block;
+  position: relative;
+  line-height: 30px;
+  bottom: 50px;
+  width: 45%
+}
+
+.aboutus-logo {
+  display: inline-block;
+  position: relative;
+  left: 30px;
+  width: 45%
+}
+
+/* last section */
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+.a-list {
+  display: inline-block;
+  width: 20%;
+  font-size: 12px;
+  line-height: 18px;
+  padding:0 100px 0 10px;
+}
 
 /* footer */
 
+footer ul {
+  margin-left: 300px;
+}
+
+footer li {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+
+footer p {
+  display: inline-block;
+  position: relative;
+  padding-left: 850px;
+  bottom: 38px;
+}
 
 
 /* all */
