@@ -270,6 +270,20 @@ footer p {
   line-height: 18px;
   font-size: 12px;
 }
+.products {
+  display: inline-block;
+  position: relative;
+}
+.company {
+  display: inline-block;
+ position: relative;
+ left: 90px;
+}
+.support {
+  display: inline-block;
+  position: relative;
+  left: 170px;
+}
 /* hr line */
 .h-line {
   height: 2px;
