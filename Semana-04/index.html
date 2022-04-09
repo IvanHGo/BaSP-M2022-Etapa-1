@@ -18,19 +18,17 @@
     </head>
     <body>
         <header>
-            <span>
-                <div class="header-text">
-                    <a href="#">
-                        <span class="header-radium">Radium</span>
-                        <span class="header-rocket">Rocket</span>
-                    </a>
-                </div>
-            </span>
+            <div class="header-text">
+                <img src="Assets\img\bars.png" alt="Bars" class="menu-bars">
+                <a href="#">
+                    <span class="header-radium">Radium</span>
+                    <span class="header-rocket">Rocket</span>
+                </a>
+            </div>
         </header>
         <div class="container">
             <aside>
-                <img src="Assets\img\bars.png" alt="Bars" class="menu-bars">
-                <div class="aside">
+                <div class="flex-aside">
                     <div class="aside-menu-text">
                         <span>Menu</span>
                     </div>
@@ -83,226 +81,238 @@
                 </div>
             </aside>
             <main>
-                <section class="section-1">
-                    <img src="Assets\img\clock.png" alt="Clock" class="img-clock">
-                    <h1>Trackgenix</h1>
-                    <p>
-                        Time is in your hands. We are here to help you manage it and make it perform at its best.
-                    </p>
-                    <p>
-                        Trackgenix sistem is designed to facilitate the recording of hours worked by each employee
-                        in each project and work team. It can be used by multiple roles in the company and will help
-                        with the managment of multiple proyects at the same time.
-                    </p>
-                </section>
-                <section>
-                    <h2>Funcionalities</h2>
-                    <div class="block">
-                        <div class="star-img">
-                            <img src="Assets\img\star.png" alt="star">
-                        </div>
-                        <div class="block-text">
-                            <h3>Timesheet</h3>
+                <div class="flex-main">
+                    <section class="section-1">
+                        <div class="text-container">
+                            <h1>Trackgenix</h1>
                             <p>
-                                The most important funcionality of the sistem is the timesheet. Perfect for time track
-                                of the employees and diferent proyects. Helps you for a faster and accurate managment.
+                                Time is in your hands. We are here to help you manage it and make it perform at its best.
+                            </p>
+                            <p>
+                                Trackgenix sistem is designed to facilitate the recording of hours worked by each employee
+                                in each project and work team. It can be used by multiple roles in the company and will help
+                                with the managment of multiple proyects at the same time.
                             </p>
                         </div>
-                    </div>
-                    <div class="block">
-                        <div class="star-img">
-                            <img src="Assets\img\star.png" alt="star">
-                        </div>
-                        <div class="block-text">
-                            <h3>Reports</h3>
-                            <p>
-                                Every employee can make reports for the diferents proyects. Then you could check them in
-                                the form of graphics and text.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="star-img">
-                            <img src="Assets\img\star.png" alt="star">
-                        </div>
-                        <div class="block-text">
-                            <h3>Resource management</h3>
-                            <p>
-                                Perfect for reduce costs by helping you manage salaries and expenses of the diferent proyects.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="star-img">
-                            <img src="Assets\img\star.png" alt="star">
-                        </div>
-                        <div class="block-text">
-                            <h3>Roles</h3>
-                            <p>
-                                The system is designed for any role in the company with its different functionalities
-                                and work areas.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <div class="h-line"></div>
-                <section>
-                    <h2>¿Why do you use Trackgenix?</h2>
-                    <div class="block">
-                        <div class="star-img">
-                            <img src="Assets\img\star.png" alt="star">
-                        </div>
-                        <div class="block-text">
-                            <h3>Productivity booster</h3>
-                            <p>
-                                Trackgenix will help you earn time by giving you all the tools that you need to manage
-                                all your proyects and team members.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="star-img">
-                            <img src="Assets\img\star.png" alt="star">
-                        </div>
-                        <div class="block-text">
-                            <h3>Work tracking</h3>
-                            <p>
-                                The work traceability never been easier. You can submit and check the work for all the
-                                members in each proyects.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="star-img">
-                            <img src="Assets\img\star.png" alt="star">
-                        </div>
-                        <div class="block-text">
-                            <h3>Leadership and team managment</h3>
-                            <p>
-                                We designed diferents designs and funcionalities for different hierarchical levels
-                                of the organization to help management of the proyects.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="star-img">
-                            <img src="Assets\img\star.png" alt="star">
-                        </div>
-                        <div class="block-text">
-                            <h3>Decision making</h3>
-                            <p>
-                                We will not make the decisions for you but with all tools you have in this sistem
-                                it will be easier than ever.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <div class="h-line"></div>
-                <section>
-                    <h2>Ask for information</h2>
-                    <form>
-                        <div class="personal-data">
-                            <input type="text" name="name" placeholder="Name">
-                            <input type="email" name="email" placeholder="Email">
-                        </div>
-                            <span>Contact area:</span>
-                        <div>
-                            <div class="form-radio">
-                                <input type="radio" name="contactarea" value="humanresourses">
-                                <label>Human Resourses</label>
+                        <img src="Assets\img\clock.png" alt="Clock" class="img-clock">
+                    </section>
+                    <section class="section-2">
+                        <h2>Funcionalities</h2>
+                        <div class="section-2-3-blocks">
+                            <div class="block">
+                                <div class="star-img">
+                                    <img src="Assets\img\star.png" alt="star">
+                                </div>
+                                <div class="block-text">
+                                    <h3>Timesheet</h3>
+                                    <p>
+                                        The most important funcionality of the sistem is the timesheet. Perfect for time track
+                                        of the employees and diferent proyects. Helps you for a faster and accurate managment.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="form-radio">
-                                <input type="radio" name="contactarea" value="sistems">
-                                <label>Sistems</label>
-                            </div>
-                            <div class="form-radio">
-                                <input type="radio" name="contactarea" value="commercialization">
-                                <label>Commercialization</label>
+                            <div class="block">
+                                <div class="star-img">
+                                    <img src="Assets\img\star.png" alt="star">
+                                </div>
+                                <div class="block-text">
+                                    <h3>Reports</h3>
+                                    <p>
+                                        Every employee can make reports for the diferents proyects. Then you could check them in
+                                        the form of graphics and text.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <textarea name="message" rows="10" cols="60" placeholder="Enter your message">
-                            </textarea>
-                            <input type="submit" value="Send Message" class="submit">
-                            <input type="button" value="Reset" class="reset">
+                        <div class="section-2-3-blocks">
+                            <div class="block">
+                                <div class="star-img">
+                                    <img src="Assets\img\star.png" alt="star">
+                                </div>
+                                <div class="block-text">
+                                    <h3>Resource management</h3>
+                                    <p>
+                                        Perfect for reduce costs by helping you manage salaries and expenses of the diferent proyects.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="star-img">
+                                    <img src="Assets\img\star.png" alt="star">
+                                </div>
+                                <div class="block-text">
+                                    <h3>Roles</h3>
+                                    <p>
+                                        The system is designed for any role in the company with its different functionalities
+                                        and work areas.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </form>
-                </section>
-                <div class="h-line"></div>
-                <section>
-                    <div class="aboutus-text">
-                        <h2>About us</h2>
-                        <p>
-                            We are a company dedicated to solving problems through the development of specialized and
-                            personalized software for each situation. We have years of experience in the IT field
-                            and we improve day by day by training our staff and new students who want to become professionals
-                            in the area. Contact us for the better courses with the better professionals in the area. :)
-                        </p>
-                    </div>
-                    <div class="aboutus-logo">
-                        <img src="Assets\img\rocketlogo.png" alt="RadiumRocket">
-                    </div>
-                </section>
-                <div class="h-line"></div>
-                <section>
-                    <div class="a-list">
-                        <div class="products">
-                            <h4>Products</h4>
-                            <ol>
-                                <li>
-                                    <a href="#">Features</a>
-                                </li>
-                                <li>
-                                    <a href="#">Downloads</a>
-                                </li>
-                                <li>
-                                    <a href="#">Integrations</a>
-                                </li>
-                                <li>
-                                    <a href="#">Extras</a>
-                                </li>
-                            </ol>
+                    </section>
+                    <div class="h-line"></div>
+                    <section>
+                        <h2>¿Why do you use Trackgenix?</h2>
+                        <div class="section-2-3-blocks">
+                            <div class="block">
+                                <div class="star-img">
+                                    <img src="Assets\img\star.png" alt="star">
+                                </div>
+                                <div class="block-text">
+                                    <h3>Productivity booster</h3>
+                                    <p>
+                                        Trackgenix will help you earn time by giving you all the tools that you need to manage
+                                        all your proyects and team members.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="star-img">
+                                    <img src="Assets\img\star.png" alt="star">
+                                </div>
+                                <div class="block-text">
+                                    <h3>Work tracking</h3>
+                                    <p>
+                                        The work traceability never been easier. You can submit and check the work for all the
+                                        members in each proyects.
+                                    </p>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="section-2-3-blocks">
+                            <div class="block">
+                                <div class="star-img">
+                                    <img src="Assets\img\star.png" alt="star">
+                                </div>
+                                <div class="block-text">
+                                    <h3>Leadership and team managment</h3>
+                                    <p>
+                                        We designed diferents designs and funcionalities for different hierarchical levels
+                                        of the organization to help management of the proyects.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="star-img">
+                                    <img src="Assets\img\star.png" alt="star">
+                                </div>
+                                <div class="block-text">
+                                    <h3>Decision making</h3>
+                                    <p>
+                                        We will not make the decisions for you but with all tools you have in this sistem
+                                        it will be easier than ever.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="a-list">
-                        <div class="company">
-                            <h4>Company</h4>
-                            <ol>
-                                <li>
-                                    <a href="#">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Clients</a>
-                                </li>
-                                <li>
-                                    <a href="#">Resources</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                            </ol>
+                    </section>
+                    <div class="h-line"></div>
+                    <section>
+                        <h2>Ask for information</h2>
+                        <form>
+                            <div class="personal-data">
+                                <input type="text" name="name" placeholder="Name">
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                                <span>Contact area:</span>
+                            <div>
+                                <div class="form-radio">
+                                    <input type="radio" name="contactarea" value="humanresourses">
+                                    <label>Human Resourses</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" name="contactarea" value="sistems">
+                                    <label>Sistems</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" name="contactarea" value="commercialization">
+                                    <label>Commercialization</label>
+                                </div>
+                            </div>
+                            <div>
+                                <textarea name="message" rows="10" cols="60" placeholder="Enter your message">
+                                </textarea>
+                                <input type="submit" value="Send Message" class="submit">
+                                <input type="button" value="Reset" class="reset">
+                            </div>
+                        </form>
+                    </section>
+                    <div class="h-line"></div>
+                    <section>
+                        <div class="aboutus-text">
+                            <h2>About us</h2>
+                            <p>
+                                We are a company dedicated to solving problems through the development of specialized and
+                                personalized software for each situation. We have years of experience in the IT field
+                                and we improve day by day by training our staff and new students who want to become professionals
+                                in the area. Contact us for the better courses with the better professionals in the area. :)
+                            </p>
                         </div>
-                    </div>
-                    <div class="a-list">
-                        <div class="support">
-                            <h4>Support</h4>
-                            <ol>
-                                <li>
-                                    <a href="#">Help</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorials</a>
-                                </li>
-                                <li>
-                                    <a href="#">API</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ol>
+                        <div class="aboutus-logo">
+                            <img src="Assets\img\rocketlogo.png" alt="RadiumRocket">
                         </div>
-                    </div>
-                </section>
+                    </section>
+                    <div class="h-line"></div>
+                    <section>
+                        <div class="a-list">
+                            <div class="products">
+                                <h4>Products</h4>
+                                <ol>
+                                    <li>
+                                        <a href="#">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Downloads</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Integrations</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Extras</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="a-list">
+                            <div class="company">
+                                <h4>Company</h4>
+                                <ol>
+                                    <li>
+                                        <a href="#">About us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Clients</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Resources</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="a-list">
+                            <div class="support">
+                                <h4>Support</h4>
+                                <ol>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tutorials</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">API</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </main>
         </div>
         <footer>

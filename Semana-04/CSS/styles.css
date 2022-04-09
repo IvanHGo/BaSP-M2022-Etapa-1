@@ -8,5 +8,4 @@ a:link, a:visited, a:active{
 }
 .container {
     display: flex;
-    width: 100%;
 }
