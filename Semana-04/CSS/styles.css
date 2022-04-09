@@ -1,0 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    font-weight: 400;
+}
+a:link, a:visited, a:active{
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    width: 100%;
+}
