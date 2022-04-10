@@ -17,10 +17,10 @@ main {
     padding-bottom: 3em;
     width: 100%;
 }
-
 .text-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding-right: 30px
 }
 
@@ -29,7 +29,7 @@ main {
 }
 .section-2-3-blocks {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     width: 100%;
 }
@@ -38,7 +38,11 @@ main {
     width: 100%;
     padding: 30px
 }
-
+.block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .star-img{
-    padding-right: 10px;
+    padding-right: 1.5em;
 }
