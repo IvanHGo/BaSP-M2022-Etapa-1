@@ -22,6 +22,11 @@ h3 {
     font-size: 20px;
     font-weight: 700;
 }
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
 /* aside */
 .aside-menu-text {
     font-size: 30px;
@@ -35,9 +40,7 @@ h3 {
 }
 
 /* main */
-.container {
-    display: flex;
-}
+
 .section-1 p {
     line-height: 30px;
     font-size: 16px;
@@ -51,4 +54,44 @@ h3 {
 }
 .block-text {
     line-height: 18px;
+}
+
+/* form */
+.submit {
+    border: 0;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.reset {
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #373867;
+    border-radius: 5px;
+    border-width: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* about-us */
+.aboutus-text p {
+    line-height: 30px;
+}
+
+/* last-section */
+.a-list {
+    line-height: 18px;
+    font-size: 12px;
+}
+ol {
+    list-style-type: decimal;
+    padding-left: 1em;
+}
+
+@media screen and (max-width: 780px) {
+    aside {
+        display: none;
+    }
+    
 }

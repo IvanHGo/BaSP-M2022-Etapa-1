@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    width: 100%;
+    background-color: #D9D9E2;
+}
+footer ul {
+    display: flex;
+    padding: 1em;
+}
+footer p {
+    /* display: flex;
+    justify-content: center; */
+}
+.footer {
+    display: flex;
+    margin-left: 24%;
+}
