@@ -31,15 +31,18 @@ main {
 .section-2 {
     padding-bottom: 3em;
 }
-.section-2-3-blocks {
+.stars-container {
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    padding-bottom: 2em;
+    border-bottom: 2px solid #C4C4C4;
+
 }
 .block {
     display: flex;
-    flex: 2 0 350px;
+    flex: 2 0 250px;
     width: 100%;
     padding: 30px
 }
@@ -53,6 +56,10 @@ main {
 }
 
 /* section form*/
+.form {
+    padding: 1.5em 0 1em 0;
+    border-bottom: 2px solid #C4C4C4;
+}
 .personal-data {
     display: flex;
     justify-content: space-between;
@@ -85,7 +92,8 @@ main {
 .about-us {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 4em;
+    padding: 1em 0 4em 0;
+    border-bottom: 2px solid #C4C4C4;
 }
 .aboutus-text{
     display: flex;
@@ -96,4 +104,5 @@ main {
 .last-section {
     display: flex;
     justify-content: space-between;
+    padding-top: 3em;
 }

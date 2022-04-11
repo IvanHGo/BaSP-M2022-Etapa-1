@@ -1,17 +1,22 @@
-footer {
+.footer {
     display: flex;
     width: 100%;
     background-color: #D9D9E2;
 }
-footer ul {
+.footer ul {
     display: flex;
     padding: 1em;
 }
-footer p {
-    /* display: flex;
-    justify-content: center; */
-}
-.footer {
+.icons {
     display: flex;
-    margin-left: 24%;
+    flex-wrap: nowrap;
+    width: 45%;
+    padding: .2em;
+    flex-basis: 230px;
+}
+.footerp {
+    text-align: center;
+    align-self: center;
+    width: 55%;
+    font-size: 14px;
 }

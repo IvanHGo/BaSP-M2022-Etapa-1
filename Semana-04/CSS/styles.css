@@ -6,6 +6,7 @@ body {
 }
 a:link, a:visited, a:active{
     text-decoration: none;
+    color: #373867;
 }
 h1 {
     line-height: 100px;
@@ -28,14 +29,16 @@ h4 {
     padding-bottom: 1em;
 }
 /* aside */
-.aside-menu-text {
-    font-size: 30px;
+.menu {
+    font-size: 2em;
     font-weight: 700;
+    padding-bottom: 12%;
     text-decoration: underline 5px #AACE9B;
 }
-.aside-contactus-text {
-    font-size: 30px;
+.contactus {
+    font-size: 2em;
     font-weight: 700;
+    padding: 1.5em 0 .5em 0;
     text-decoration: underline 5px #AACE9B;
 }
 
@@ -93,5 +96,4 @@ ol {
     aside {
         display: none;
     }
-    
 }

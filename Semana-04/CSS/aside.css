@@ -12,3 +12,25 @@ aside {
     flex-direction: column;
     padding: 4em 1.5em 0 1.5em;
 }
+.aside-list {
+    font-size: 0.875em;
+    font-weight: 500;
+}
+.contactus-text {
+    font-size: 0.875em;
+    padding-bottom: 2em;
+    line-height: 1.125em;
+}
+nav ul li {
+    padding: 15px 0 15px 0;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: 500;
+    font-size: 0.875em;
+    line-height: 1em;
+}
+address ul li {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 0.875em;
+    line-height: 1em;
+}
