@@ -27,7 +27,7 @@ main {
 }
 .text-container {
     display: flex;
-    flex: 2 0 300px;
+    flex: 2 0 250px;
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
@@ -35,11 +35,13 @@ main {
 }
 .img-clock {
     display: flex;
-    flex: 2 0 300px;
+    align-self: center;
+    flex: 2 0 250px;
     width: 50%;
-    height: 340px;
+    max-width: 30em;
+    min-width: 15em;
+    height: 50%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.6));;
-    z-index: -1;
 }
 /* section 2/3 */
 .section-2 {
@@ -114,13 +116,14 @@ main {
 .aboutus-text {
     display: flex;
     flex-direction: column;
-    flex: 2 0 350px;
+    flex: 2 0 300px;
     width: 50%;
 }
 .aboutus-logo {
     display: flex;
-    flex: 2 0 350px;
+    flex: 2 0 300px;
     width: 100%;
+    min-width: none;
 }
 /* last section */
 .last-section {

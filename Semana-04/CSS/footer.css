@@ -1,15 +1,21 @@
 .footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
     width: 100%;
     background-color: #D9D9E2;
 }
-.footer ul {
-    display: flex;
+.social {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    /* width: 100%; */
+    margin: 0 auto;
 }
 .icons {
-    display: flex;
-    flex-wrap: nowrap;
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
     width: 45%;
     padding: .2em;
     flex-basis: 230px;
@@ -20,3 +26,15 @@
     width: 55%;
     font-size: 14px;
 }
+/* .footer ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.footer ul {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+} */

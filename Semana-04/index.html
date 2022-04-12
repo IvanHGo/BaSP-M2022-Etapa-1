@@ -7,13 +7,13 @@
 	<meta name="description" content="Landing page for a time tracker app for proyects and employees">
 	<meta name="keywords" content="HTML, CSS, landing, Trackgenix, software, development">
 	<meta name="author" content="Ivan Gobbi">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="CSS\reset.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="CSS\styles.css" media="screen">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/aside.css">
-	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="/css/header.css">
+	<link rel="stylesheet" href="/css/aside.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/footer.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 	<title>Trackgenix</title>
 </head>
 <body>
@@ -142,7 +142,6 @@
 						</div>
 					</div>
 				</section>
-				<div class="h-line"></div>
 				<section>
 					<h2>¿Why do you use Trackgenix?</h2>
 					<div class="stars-container">
@@ -196,7 +195,6 @@
 						</div>
 					</div>
 				</section>
-				<div class="h-line"></div>
 				<section class="form">
 					<h2>Ask for information</h2>
 					<form>
@@ -223,13 +221,12 @@
 							<textarea name="message" rows="10" cols="60" placeholder="Enter your message">
 							</textarea>
 							<div class="textarea-but">
-								<input type="submit" value="Send Message" class="submit">
-								<input type="button" value="Reset" class="reset">
+								<input class="submit" type="submit" value="Send Message">
+								<input class="reset" type="button" value="Reset">
 							</div>
 						</div>
 					</form>
 				</section>
-				<div class="h-line"></div>
 				<section class="about-us">
 					<div class="aboutus-text">
 						<h2>About us</h2>
@@ -244,85 +241,70 @@
 						<img src="Assets\img\rocketlogo.png" alt="RadiumRocket">
 					</div>
 				</section>
-				<div class="h-line"></div>
 				<section class="last-section">
 					<div class="a-list">
-						<div class="products">
-							<h4>Products</h4>
-							<ol>
-								<li>
-									<a href="#">Features</a>
-								</li>
-								<li>
-									<a href="#">Downloads</a>
-								</li>
-								<li>
-									<a href="#">Integrations</a>
-								</li>
-								<li>
-									<a href="#">Extras</a>
-								</li>
-							</ol>
-						</div>
+						<h4>Products</h4>
+						<ol>
+							<li>
+								<a href="#">Features</a>
+							</li>
+							<li>
+								<a href="#">Downloads</a>
+							</li>
+							<li>
+								<a href="#">Integrations</a>
+							</li>
+							<li>
+								<a href="#">Extras</a>
+							</li>
+						</ol>
 					</div>
 					<div class="a-list">
-						<div class="company">
-							<h4>Company</h4>
-							<ol>
-								<li>
-									<a href="#">About us</a>
-								</li>
-								<li>
-									<a href="#">Clients</a>
-								</li>
-								<li>
-									<a href="#">Resources</a>
-								</li>
-								<li>
-									<a href="#">Blog</a>
-								</li>
-							</ol>
-						</div>
+						<h4>Company</h4>
+						<ol>
+							<li>
+								<a href="#">About us</a>
+							</li>
+							<li>
+								<a href="#">Clients</a>
+							</li>
+							<li>
+								<a href="#">Resources</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+						</ol>
 					</div>
 					<div class="a-list">
-						<div class="support">
-							<h4>Support</h4>
-							<ol>
-								<li>
-									<a href="#">Help</a>
-								</li>
-								<li>
-									<a href="#">Tutorials</a>
-								</li>
-								<li>
-									<a href="#">API</a>
-								</li>
-								<li>
-									<a href="#">Contact</a>
-								</li>
-							</ol>
-						</div>
+						<h4>Support</h4>
+						<ol>
+							<li>
+								<a href="#">Help</a>
+							</li>
+							<li>
+								<a href="#">Tutorials</a>
+							</li>
+							<li>
+								<a href="#">API</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ol>
 					</div>
 				</section>
 			</div>
 			<div class="footer">
-				<nav>
-					<ul>
-						<li>
-							<a class="icons" href="#"><img src="Assets\img\linkedin.png"></a>
-						</li>
-						<li>
-							<a class="icons" href="#"><img src="Assets\img\twitter.png"></a>
-						</li>
-						<li>
-							<a class="icons" href="#"><img src="Assets\img\whatsapp.png"></a>
-						</li>
-						<li>
-							<a class="icons" href="#"><img src="Assets\img\facebook.png"></a>
-						</li>
-					</ul>
-				</nav>
-				<p class="footerp">Trackgenix ®</p>
+				<div class="social">
+					<a class="icons" href="#"><img src="Assets\img\linkedin.png"></a>
+					<a class="icons" href="#"><img src="Assets\img\twitter.png"></a>
+					<a class="icons" href="#"><img src="Assets\img\whatsapp.png"></a>
+					<a class="icons" href="#"><img src="Assets\img\facebook.png"></a>
+				</div>
+				<div class="footerp">
+					<p>Trackgenix ®</p>
+				</div>
 			</div>
 		</main>
 	</div>
