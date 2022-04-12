@@ -1,5 +1,7 @@
 main {
     width: 100%;
+    flex: 5;
+    /* flex: 7; */
     /* margin-top: 5em;
     margin-left: 23%;
     padding-top: 7.5em;
@@ -11,21 +13,33 @@ main {
 .flex-main {
     display: flex;
     flex-direction: column;
-    padding: 7.5em 5em;
+    padding: 3em 3em;
+
 }
 /* section 1 */
 .section-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 3em;
     width: 100%;
 }
 .text-container {
     display: flex;
+    flex: 2 0 300px;
     flex-direction: column;
     justify-content: space-around;
+    width: 50%;
     padding-right: 30px
+}
+.img-clock {
+    display: flex;
+    flex: 2 0 300px;
+    width: 50%;
+    height: 340px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.6));;
+    z-index: -1;
 }
 /* section 2/3 */
 .section-2 {
@@ -38,11 +52,11 @@ main {
     width: 100%;
     padding-bottom: 2em;
     border-bottom: 2px solid #C4C4C4;
-
 }
 .block {
     display: flex;
-    flex: 2 0 250px;
+    flex: 2 0 180px;
+    min-width: 30%;
     width: 100%;
     padding: 30px
 }
@@ -62,12 +76,13 @@ main {
 }
 .personal-data {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     padding-bottom: 2em;
 }
 .personal-data input {
-    width: 28em;
+    width: 45%;
 }
 .form-rad-but {
     display: flex;
@@ -91,14 +106,21 @@ main {
 /* section aboutus */
 .about-us {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1em 0 4em 0;
     border-bottom: 2px solid #C4C4C4;
 }
-.aboutus-text{
+.aboutus-text {
     display: flex;
     flex-direction: column;
+    flex: 2 0 350px;
     width: 50%;
+}
+.aboutus-logo {
+    display: flex;
+    flex: 2 0 350px;
+    width: 100%;
 }
 /* last section */
 .last-section {

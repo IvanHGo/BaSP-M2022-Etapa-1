@@ -1,10 +1,7 @@
 aside {
-    /* display: flex;
-    flex-direction: column; */
-    /* position: fixed; */
     top: 5em;
-    width: 30%;
-    /* height: 100%; */
+    /* width: 30%; */
+    flex: 1.5;
     background-color: #D9D9E2;
 }
 .flex-aside {

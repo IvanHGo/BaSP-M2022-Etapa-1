@@ -1,11 +1,11 @@
 .footer {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background-color: #D9D9E2;
 }
 .footer ul {
     display: flex;
-    padding: 1em;
 }
 .icons {
     display: flex;
