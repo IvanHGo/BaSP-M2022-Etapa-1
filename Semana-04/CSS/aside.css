@@ -3,6 +3,19 @@ aside {
     flex: 1.5;
     background-color: #D9D9E2;
 }
+nav ul li {
+    padding: 1em 0 1em 0;
+    line-height: 1em;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: 500;
+    font-size: 0.875em;
+}
+address ul li {
+    margin-bottom: 1.5em;
+    line-height: 1em;
+    font-weight: 700;
+    font-size: 0.875em;
+}
 .flex-aside {
     display: flex;
     flex-direction: column;
@@ -13,20 +26,7 @@ aside {
     font-weight: 500;
 }
 .contactus-text {
-    font-size: 0.875em;
     padding-bottom: 2em;
     line-height: 1.125em;
-}
-nav ul li {
-    padding: 1em 0 1em 0;
-    border-bottom: 1px solid #C4C4C4;
-    font-weight: 500;
     font-size: 0.875em;
-    line-height: 1em;
-}
-address ul li {
-    margin-bottom: 1.5em;
-    font-weight: 700;
-    font-size: 0.875em;
-    line-height: 1em;
 }

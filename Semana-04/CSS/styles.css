@@ -25,34 +25,38 @@ h3 {
     font-weight: 700;
 }
 h4 {
+    padding-bottom: 1em;
     font-size: 14px;
     font-weight: 700;
-    padding-bottom: 1em;
+}
+ol {
+    list-style-type: decimal;
+    padding-left: 1em;
 }
 /* aside */
 .menu {
+    padding-bottom: 12%;
     font-size: 2em;
     font-weight: 700;
-    padding-bottom: 12%;
     text-decoration: underline 5px #AACE9B;
 }
 .contactus {
+    padding: 1.5em 0 .5em 0;
     font-size: 2em;
     font-weight: 700;
-    padding: 1.5em 0 .5em 0;
     text-decoration: underline 5px #AACE9B;
 }
 
 /* main */
 
 .section-1 p {
-    line-height: 30px;
-    font-size: 16px;
-    padding-bottom: 10px;
+    padding-bottom: .625em;
+    line-height: 1.875em;
+    font-size: 1em;
 }
 
 .block-text {
-    line-height: 18px;
+    line-height: 1.125em;
 }
 
 /* form */
@@ -65,27 +69,22 @@ h4 {
 }
 .reset {
     border-radius: 5px;
+    border-width: 1px;
     background-color: #ffffff;
     border-color: #373867;
-    border-radius: 5px;
-    border-width: 1px;
     text-transform: uppercase;
     font-weight: 500;
 }
 
 /* about-us */
 .aboutus-text p {
-    line-height: 30px;
+    line-height: 1.875em;
 }
 
 /* last-section */
 .a-list {
-    line-height: 18px;
-    font-size: 12px;
-}
-ol {
-    list-style-type: decimal;
-    padding-left: 1em;
+    line-height: 1.125em;
+    font-size: .75em;
 }
 
 @media screen and (max-width: 780px) {
@@ -111,9 +110,5 @@ ol {
     .personal-data {
         display: flex;
         flex-direction: column;
-    }
-    .last-section {
-        /* flex-direction: column;
-        align-items: center; */
     }
 }

@@ -52,7 +52,7 @@ main {
 }
 .block {
     display: flex;
-    flex: 2 0 180px;
+    flex: 2 0 275px;
     min-width: 30%;
     width: 100%;
     padding: 1.875em;
