@@ -8,3 +8,5 @@ I started the index using the basic html:5 structure. Starting with the body I d
 In this repository you are also going to find an asset folder that contaign all the images that I use in the file.
 ## Week-03 CSS styles
 This week I gave styles to the HTML work of week-02. I did this by creating and linking an external stylesheet named style.css to a copy of the previus HTML index. 
+## Week-04 FlexBox
+In this week proyect we create the same page of the last work but we do it using flexbox.
