@@ -16,4 +16,6 @@
 }
 .menu-bars {
   display: none;
+  width: 2.5em;
+  padding-left: 1em;
 }

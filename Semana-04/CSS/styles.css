@@ -97,13 +97,20 @@ ol {
     }
     .menu-bars {
         display: inline-block !important;
-        width: 2.5em;
-        padding-left: 1em;
     }
     .footer {
         flex-direction: column;
-        /* justify-content: center; */
         align-content: center;
+    }
+    .social {
+        margin: 0 auto;
+    }
+    .form-rad-but {
+        flex-direction: column;
+    }
+    .personal-data {
+        display: flex;
+        flex-direction: column;
     }
     .last-section {
         /* flex-direction: column;

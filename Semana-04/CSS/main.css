@@ -1,11 +1,6 @@
 main {
     width: 100%;
     flex: 5;
-    /* flex: 7; */
-    /* margin-top: 5em;
-    margin-left: 23%;
-    padding-top: 7.5em;
-    padding-left: 5.75em; */
 }
 .container {
     display: flex;
@@ -31,7 +26,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
-    padding-right: 30px
+    padding-right: 1.875em;
 }
 .img-clock {
     display: flex;
@@ -60,7 +55,7 @@ main {
     flex: 2 0 180px;
     min-width: 30%;
     width: 100%;
-    padding: 30px
+    padding: 1.875em;
 }
 .block-text {
     display: flex;
@@ -74,7 +69,7 @@ main {
 /* section form*/
 .form {
     padding: 1.5em 0 1em 0;
-    border-bottom: 2px solid #C4C4C4;
+    border-bottom: 0.125em solid #C4C4C4;
 }
 .personal-data {
     display: flex;
@@ -111,7 +106,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1em 0 4em 0;
-    border-bottom: 2px solid #C4C4C4;
+    border-bottom: 0.125em solid #C4C4C4;
 }
 .aboutus-text {
     display: flex;
@@ -121,6 +116,7 @@ main {
 }
 .aboutus-logo {
     display: flex;
+    justify-content: center;
     flex: 2 0 300px;
     width: 100%;
     min-width: none;

@@ -1,6 +1,5 @@
 aside {
     top: 5em;
-    /* width: 30%; */
     flex: 1.5;
     background-color: #D9D9E2;
 }
@@ -19,14 +18,14 @@ aside {
     line-height: 1.125em;
 }
 nav ul li {
-    padding: 15px 0 15px 0;
+    padding: 1em 0 1em 0;
     border-bottom: 1px solid #C4C4C4;
     font-weight: 500;
     font-size: 0.875em;
     line-height: 1em;
 }
 address ul li {
-    margin-bottom: 5px;
+    margin-bottom: 1.5em;
     font-weight: 700;
     font-size: 0.875em;
     line-height: 1em;
