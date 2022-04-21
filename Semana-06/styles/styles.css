@@ -1,0 +1,127 @@
+/* general */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    font-size: 16px;
+    font-weight: 400;
+}
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: #373867;
+}
+h1 {
+    line-height: 100px;
+    font-size: 60px;
+    font-weight: 700;
+}
+h2 {
+    padding: 30px 0 30px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+h3 {
+    padding-bottom: 1em;
+    font-size: 20px;
+    font-weight: 700;
+}
+h4 {
+    padding:1em 0 1em 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+ol {
+    list-style-type: decimal;
+    padding-left: 1em;
+}
+/* aside */
+.menu {
+    padding-bottom: 12%;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: underline 5px #AACE9B;
+}
+.contactus {
+    padding: 1.5em 0 .5em 0;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: underline 5px #AACE9B;
+}
+
+/* main */
+
+.section-1 p {
+    padding-bottom: .625em;
+    line-height: 1.875em;
+    font-size: 1em;
+}
+
+.block-text {
+    line-height: 1.125em;
+}
+
+/* form */
+.submit {
+    border: 0;
+    border-radius: 5px;
+    background-color: #AACE9B;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.reset {
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: #ffffff;
+    border-color: #373867;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* about-us */
+.aboutus-text p {
+    line-height: 1.875em;
+}
+
+/* last-section */
+.a-list {
+    line-height: 1.125em;
+    font-size: .75em;
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        font-size: 13px;
+    }
+    aside {
+        display: none;
+    }
+    .menu-bars {
+        display: inline-block !important;
+    }
+    .footer {
+        flex-direction: column;
+        align-content: center;
+    }
+    .social {
+        margin: 0 auto;
+    }
+    .form-rad-but {
+        flex-direction: column;
+    }
+    .personal-data {
+        display: flex;
+        flex-direction: column;
+    }
+    .last-section {
+        flex-direction: column;
+        align-items: center;
+    }
+        /* .form-spc {
+        display: flex;
+        width: 220%;
+        padding: .5em 0 .5em;
+    } */
+    /* .textarea-but {
+        flex-direction: column;
+        align-content: center;
+    } */
+}

@@ -1,0 +1,32 @@
+aside {
+    top: 5em;
+    flex: 1.5;
+    background-color: #D9D9E2;
+}
+nav ul li {
+    padding: 1em 0 1em 0;
+    line-height: 1em;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: 500;
+    font-size: 0.875em;
+}
+address ul li {
+    margin-bottom: 1.5em;
+    line-height: 1em;
+    font-weight: 700;
+    font-size: 0.875em;
+}
+.flex-aside {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 1.5em 0 1.5em;
+}
+.aside-list {
+    font-size: 0.875em;
+    font-weight: 500;
+}
+.contactus-text {
+    padding-bottom: 2em;
+    line-height: 1.125em;
+    font-size: 0.875em;
+}
