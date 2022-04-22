@@ -1,0 +1,54 @@
+/* GENERAL */
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: #373867;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* HEADER */
+.header-text {
+    padding: .5em 0 .5em 0;
+    width: 100%;
+    background-color: #373867;
+}
+.header-radium {
+    padding-left: .3em;
+    color: #46A37C;
+    font-size: 3.75em;
+    font-weight: bold;
+}
+.header-rocket {
+    color: #AACF9B;
+    font-size: 3.75em;
+    font-weight: lighter;
+}
+.menu-bars {
+    display: none;
+    width: 2.5em;
+    padding-left: 1em;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    background-color: #C9C9D6;
+    height: 80vh;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background-color: #C4C4C4;
+}
+.footerp {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
