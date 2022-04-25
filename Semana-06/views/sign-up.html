@@ -13,19 +13,80 @@
     <header>
 		<div class="header-text">
 			<img src="../assets/img/bars.png" alt="Bars" class="menu-bars">
-			<a href="#">
+			<a href="./index.html">
 				<span class="header-radium">Radium</span>
 				<span class="header-rocket">Rocket</span>
 			</a>
 		</div>
 	</header>
     <main>
-        
+        <form>
+            <h1>Sign Up</h1>
+            <div class="form-block">
+                <div>
+                    <label for="f-name">First name</label>
+                    <input id="nameId" class="input">
+                </div>
+                <div>
+                    <label for="l-name">Last name</label>
+                    <input id="lNameId" class="input">
+                </div>
+            </div>
+            <div class="form-block">
+                <div>
+                    <label for="dni">DNI</label>
+                    <input id="dniId" class="input">
+                </div>
+                <div>
+                    <label for="birthday">Birthday</label>
+                    <input id="birthdayId" class="input">
+                </div>
+            </div>
+            <div class="form-block">
+                <div>
+                    <label for="cellphone">Cellphone</label>
+                    <input id="phoneId" class="input">
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input id="addressId" class="input">
+                </div>
+            </div>
+            <div class="form-block">
+                <div>
+                    <label for="location">Location</label>
+                    <input id="locationId" class="input">
+                </div>
+                <div>
+                    <label for="postal-code">Postal code</label>
+                    <input id="postalCodeId" class="input">
+                </div>
+            </div>
+            <div class="email-block">
+                <label for="email">Email</label>
+                <input id="emailId">
+            </div>
+            <div class="form-block">
+                <div>
+                    <label for="password">Password</label>
+                    <input id="passwordId" class="input" type="password">
+                </div>
+                <div>
+                    <label for="r-password">Repeat password</label>
+                    <input id="passwordRId" class="input" type="password">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="submitId" class="submit" type="submit" href="#">Continue</button>
+                <button class="reset" type="button">Reset</button>
+            </div>
+        </form>
+        <footer>
+            <div class="footerp">
+                <p>Trackgenix ®</p>
+            </div>
+        </footer>
     </main>
-    <footer>
-        <div class="footerp">
-            <p>Trackgenix ®</p>
-        </div>
-    </footer>
+    <script src="../javascript/sign-up.js"></script>
 </body>
 </html>

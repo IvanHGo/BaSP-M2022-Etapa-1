@@ -26,24 +26,32 @@
                 <label for="email">Email</label>
             </div>
             <div class="input">
-                <input type="text">
+                <input id="emailId">
+                <div>
+                    <span id="spanEmail"></span>
+                </div>
             </div>
             <div class="label">
                 <label for="password">Password</label>
             </div>
             <div class="input">
-                <input type="text">
+                <input id="password" type="password">
+                <div>
+                    <span id="spanPass"></span>
+                </div>
             </div>
             <div class="buttons">
-                <button class="submit" type="submit" href="index.html">Continue</button>
+                <button id="submit" class="submit" type="submit" href="#">Continue</button>
                 <button class="passw" type="button">Password Recovery</button>
             </div>
-        </div>
+            <p>You don't have an account? <a href="#">Sign up here</a></p>
+        </form>
+        <footer>
+            <div class="footerp">
+                <p>Trackgenix ®</p>
+            </div>
+        </footer>
     </main>
-    <footer>
-        <div class="footerp">
-            <p>Trackgenix ®</p>
-        </div>
-    </footer>
+    <script src="../javascript/login.js"></script>
 </body>
 </html>
