@@ -9,6 +9,12 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
+span {
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    font-size: 12px;
+    font-weight: 600;
+}
 /* HEADER */
 .header-text {
     padding: .5em 0 .5em 0;
@@ -120,3 +126,16 @@ footer {
     padding: 1.2em 0;
     font-size: 14px;
 }
+/* .correct{
+    display: flex;
+    color: green;
+}
+
+.error{
+    display: flex;
+    color: red;
+}
+
+.hide{
+    display: none;
+} */

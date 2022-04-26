@@ -15,7 +15,7 @@ window.onload = function () {
     submit.addEventListener("click", submitClick);
     
     function emailFocus() {
-      email.style.border = "3px solid grey";
+      email.style.border = "2px solid grey";
       spanEmail.textContent = "";
     }
     function emailBlur() {
@@ -23,23 +23,23 @@ window.onload = function () {
       if (!mailValid) {
         spanEmail.textContent = "The email is invalid";
         spanEmail.style.color = "red";
-        email.style.border = "3px solid red";
+        email.style.border = "2px solid red";
       } else {
-        email.style.border = "3px solid green";
+        email.style.border = "2px solid green";
       }
     }
     function passFocus() {
-      pass.style.border = "3px solid grey";
+      pass.style.border = "2px solid grey";
       spanPass.textContent = "";
     }
     function passBlur() {
       passValid = validatePassword()
       if (!passValid) {
-        spanPass.textContent = "The Password is invalid";
+        spanPass.textContent = "At least 8 characters with letters and numbers";
         spanPass.style.color = "red";
-        pass.style.border = "3px solid red";
+        pass.style.border = "2px solid red";
       } else {
-        pass.style.border = "3px solid green";
+        pass.style.border = "2px solid green";
       }
     }
     function validatePassword() {
@@ -60,11 +60,11 @@ window.onload = function () {
     }
     function submitClick() {
       if (!mailValid) {
-        alert(email.value + " Email incorrect");
+        alert("There is an error with this email: " + email.value);
       } else if (!passValid) {
-        alert(pass.value + " Password incorrect");
+        alert("There is an error with this password: " + pass.value);
       } else if (mailValid && passValid) {
-        alert("successfull login - Email: " + email.value + "Password: " + pass.value);
+        alert("The login has been successful! \nEmail: " + email.value + "\nPassword: " + pass.value);
       }
     }
   }

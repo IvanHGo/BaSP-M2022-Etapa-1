@@ -1,5 +1,5 @@
 /* GENERAL */
-a:link, a:visited, a:active{
+header a:link, a:visited, a:active{
     text-decoration: none;
     color: #373867;
 }
@@ -8,6 +8,12 @@ body {
     color: #373867;
     font-size: 16px;
     font-weight: 400;
+}
+span {
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    font-size: 10px;
+    font-weight: 600;
 }
 /* HEADER */
 .header-text {
@@ -63,7 +69,7 @@ form {
 }
 .form-block {
     display: flex;
-    padding: 1em;
+    padding: .5em;
 }
 label {
     text-align: center;
@@ -110,6 +116,9 @@ input {
     justify-content: center;
     margin-bottom: 1em;
 }
+form p {
+    padding-bottom: 1em;
+}
 /* FOOTER */
 footer {
     display: flex;
@@ -124,6 +133,19 @@ footer {
     width: 100%;
     font-size: 14px;
 }
+/* .correct{
+    display: flex;
+    color: green;
+}
+
+.error{
+    display: flex;
+    color: red;
+}
+
+.hide{
+    display: none;
+} */
 @media screen and (max-width: 780px) {
     .form-block {
         display: flex;
