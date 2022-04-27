@@ -29,3 +29,19 @@ This stage of the course the task was to resolve a set of problems using JavaScr
 This link will redirect you to my github page of this assignment:
 
 https://ivanhgo.github.io/BaSP-M2022-Etapa-1/Semana-05/index.html
+
+## Week-06 JavaScript and DOM
+This phase we deepen our learning with javascript tool and we learned about DOM and how to manipulate it. My personal goal at the end of the week was to:
+
+*Understand what CSS and JavaScript libraries are.
+
+*Understand what the DOM is and be able to manipulate it.
+
+*Handle DOM events.
+
+*Develop functionalities for modern and complex websites.
+
+I hope to continue my learning and increase my abilities in this field.
+
+You can check my work in this link:
+https://ivanhgo.github.io/BaSP-M2022-Etapa-1/Semana-06/views/
