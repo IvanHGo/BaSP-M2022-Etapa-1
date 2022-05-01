@@ -58,16 +58,51 @@ window.onload = function () {
     }
     return (letterSum !== 0 && numberSum !== 0)
   }
-  function submitClick(e) {
+
+  // function submitClick(e) {
+  //   e.preventDefault();
+  //   if (!mailValid && !passValid) {
+  //     alert("There are errors with email and password! \nEmail: " + email.value + "\nPassword: " + pass.value);
+  //   } else if (!mailValid) {
+  //     alert("There is an error with this email: " + email.value);
+  //   } else if (!passValid) {
+  //     alert("There is an error with this password: " + pass.value);
+  //   } else if (mailValid && passValid) {
+  //     alert("The log-in has been successful! \nEmail: " + email.value + "\nPassword: " + pass.value);
+  //   }
+  // }
+
+  // var url = "https://basp-m2022-api-rest-server.herokuapp.com/login";
+  
+  function submitClick(e) {                                                     //template literales
+    var url = "https://basp-m2022-api-rest-server.herokuapp.com/login";
+    url = url + "?email=" + email.value + "&password=" + pass.value;
     e.preventDefault();
-    if (!mailValid && !passValid) {
-      alert("There are errors with email and password! \nEmail: " + email.value + "\nPassword: " + pass.value);
-    } else if (!mailValid) {
-      alert("There is an error with this email: " + email.value);
-    } else if (!passValid) {
-      alert("There is an error with this password: " + pass.value);
-    } else if (mailValid && passValid) {
-      alert("The log-in has been successful! \nEmail: " + email.value + "\nPassword: " + pass.value);
-    }
+    // if (!mailValid || !passValid) {
+      console.log("test")
+      fetch (url)
+      .then (function (response) {
+        return response.json()
+      })
+      .then(function (json) {
+        console.log("me quieren bajar");
+        alert(json.msg)
+      })
+      .catch (function (error) {
+        console.log("no van a poder");
+        alert(error.errors[0].msg);
+      }) 
+    // }
+      
+    //}
+    // } else {
+    //   fetch (url)
+    //   .then (function (response) {
+    //     return response.json()
+    //   })
+    //   .then (function (responseJson) {
+    //     alert(responseJson.msg);
+    //   })
+    // }
   }
 }
