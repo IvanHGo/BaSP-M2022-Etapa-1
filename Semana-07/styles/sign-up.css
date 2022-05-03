@@ -168,7 +168,7 @@ footer {
 .hide{
     display: none;
 } */
-/*                                       MODALLLLLLLLLLLLLLLLL   */
+/* MODAL */
 /* The Modal (background) */
 .modal {
     display: none;
@@ -217,9 +217,7 @@ footer {
     cursor: pointer;
 }
 
-
-
-
+/* MEDIA QUERY */
 @media screen and (max-width: 780px) {
     .form-block {
         display: flex;

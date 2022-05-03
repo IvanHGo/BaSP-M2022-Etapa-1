@@ -72,27 +72,55 @@ window.onload = function () {
   //   }
   // }
   
-  function submitClick(e) {                                 // cambiar a template literales
+  function submitClick(e) {
     e.preventDefault();
-    var url = "https://basp-m2022-api-rest-server.herokuapp.com/login";
-    url = url + "?email=" + email.value + "&password=" + pass.value;
+    var url = `https://basp-m2022-api-rest-server.herokuapp.com/login?email=${email.value}&password=${pass.value}`;
     if (!mailValid && !passValid) {
-      alert("There are errors with email and password! \nEmail: " + email.value + "\nPassword: " + pass.value);
+      // alert("There are errors with email and password! \nEmail: " + email.value + "\nPassword: " + pass.value);
+      modal.style.display = "block";
+      modalP.innerHTML = `<h2>There are errors with email and password!</h2><h3>Email: ${email.value}</h3>
+      <h3>Password: ${pass.value}</h3>`;
     } else if (!mailValid) {
-      alert("There is an error with this email: " + email.value);
+      // alert("There is an error with this email: " + email.value);
+      modal.style.display = "block";
+      modalP.innerHTML = `<h2>There is an error with this email: ${email.value}</h2>`;
     } else if (!passValid) {
-      alert("There is an error with this password: " + pass.value);
+      // alert("There is an error with this password: " + pass.value);
+      modal.style.display = "block";
+      modalP.innerHTML = `<h2>There is an error with this password: ${pass.value}</h2>`;
     } else if (mailValid && passValid) {
       fetch (url)
       .then (function (response) {
         return response.json()
       })
       .then(function (json) {
-        alert(json.msg)
+        // alert(json.msg)
+        modal.style.display = "block";
+        modalP.innerHTML = json.msg;
       })
       .catch (function (error) {
-        alert(error.errors[0].msg);
+        // alert(error.errors[0].msg);
+        modal.style.display = "block";
+        modalP.innerHTML = error.errors[0].msg;
       })
     }
   }
+  //MODALLLL //
+	var modal = document.getElementById("myModal");
+	var span = document.getElementsByClassName("close")[0];
+	var modalP = document.getElementById("modalP");
+  // var submit = document.getElementById("submit"); //ya lo tengo arriba
+
+	submit.onclick = function () {
+		modal.style.display = "block";
+		// modalP.innerHTML = responseJson.msg;
+	}
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+	window.onclick = function (event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
 }

@@ -37,7 +37,6 @@ window.onload = function () {
 	var mailValid = true;
 	var passValid = true;
 
-
 	fName.addEventListener("focus", fNameFocus);
 	fName.addEventListener("blur", fNameBlur);
 	lName.addEventListener("focus", lNameFocus);
@@ -430,26 +429,12 @@ window.onload = function () {
 			passR.style.border = "2px solid green";
 		}
 	}
-	// function submitClick(e) {
-	// 	e.preventDefault();
-	// if (confirmFName == 1 && confirmLName == 1 && confirmDni == 1 && confirmBirthday == 1 && confirmPhone == 1
-	// 	&& confirmAddress == 1 && confirmLocation == 1 && confirmPostalCode == 1 && confirmEmail == 1
-	// 	&& confirmPass == 1 && confirmPassR == 1) {
-	// alert("The sign-up has been successful!\nFirst name: " + fName.value + "\nLast name: " + lName.value +
-	// 	"\nDNI: " + dni.value + "\nBirthday: " + birthday.value + "\nCellphone: " + phone.value + "\nAddress: " +
-	// 	address.value + "\nLocation: " + location.value + "\nPostal code: " + postalCode.value + "\nEmail: " +
-	// 	email.value + "\nPassword: " + pass.value);
-	// 	} else {
-	// 		alert("ERROR\nPlese verify the information\nSome input must contain a mistake");
-	// 	}
-	// }
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
 	// url = url + "?name=" + fName.value + "&lastName=" + lName.value + "&dni=" + dni.value + "&dob=" + birthday.value
 	// + "&phone=" + phone.value + "&address=" + address.value + "&city=" + location.value + "&zip=" + postalCode.value
 	// + "&email=" + email.value + "&password=" + pass.value;
-	// console.log(url);
 
 	// function submitClick(e) {                                            //template literales
 	// 	e.preventDefault();
@@ -500,78 +485,80 @@ window.onload = function () {
 	// 			});
 	// 	}
 	// }
-	//////////////////////////////////////////// abajo por si voy a cambiar el fetch, sino borrar
-	function submitClick(e) {                                            //template literales
+	////////////////////////////////////////////
+	function submitClick(e) {
 		e.preventDefault();
-		var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
-		url =
-			url +
-			"?name=" + fName.value +
-			"&lastName=" + lName.value +
-			"&dni=" + dni.value +
-			"&dob=" + birthday.value +
-			"&phone=" + phone.value +
-			"&address=" + address.value +
-			"&city=" + location.value +
-			"&zip=" + postalCode.value +
-			"&email=" + email.value +
-			"&password=" + pass.value;
+		var url = `https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${fName.value}&lastName=${lName.value}
+		&dni=${dni.value}&dob=${birthday.value}&phone=${phone.value}&address=${address.value}&city=${location.value}
+		&zip=${postalCode.value}&email=${email.value}&password=${pass.value}`
 		if (!confirmFName || fName.value == 0) {
-			alert("name error");
+			// alert("The name entered is not valid");
 			modal.style.display = "block";
-			modalP.innerHTML = "hola prueba";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The name entered is not valid: ${fName.value}</p>`;
 		} else if (!confirmLName || lName.value == 0) {
-			alert("last name error");
+			// alert("The last name entered is not valid");
 			modal.style.display = "block";
-			modalP.innerHTML = "hola prueba2222";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The last name entered is not valid: ${lName.value}</p>`;
 		} else if (!confirmDni || dni.value == 0) {
-			alert("dni error");
+			// alert("The DNI entered is not valid");
+			modal.style.display = "block";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The DNI entered is not valid: ${dni.value}</p>`;
 		} else if (!confirmBirthday || birthday.value == 0) {
-			alert("birthday error");
+			// alert("The date of birth entered is not valid");
+			modal.style.display = "block";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The date of birth entered is not valid: ${birthday.value}</p>`;
 		} else if (!confirmPhone || phone.value == 0) {
-			alert("phone error");
+			// alert("The phone entered is not valid");
+			modal.style.display = "block";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The phone entered is not valid: ${phone.value}</p>`;
 		} else if (!confirmAddress || address.value == 0) {
-			alert("address error");
+			// alert("The address entered is not valid");
+			modal.style.display = "block";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The address entered is not valid: ${address.value}</p>`;
 		} else if (!confirmLocation || location.value == 0) {
-			alert("location error");
+			// alert("The location entered is not valid");
+			modal.style.display = "block";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The location entered is not valid: ${location.value}</p>`;
 		} else if (!confirmPostalCode || postalCode.value == 0) {
-			alert("postal code error");
+			// alert("The zip entered is not valid");
+			modal.style.display = "block";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The zip entered is not valid: ${postalCode.value}</p>`;
 		} else if (!confirmEmail || email.value == 0) {
-			alert("email error");
+			// alert("The email entered is not valid");
+			modal.style.display = "block";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The email entered is not valid: ${email.value}</p>`;
 		} else if (!confirmPass || pass.value == 0) {
-			alert("password error");
+			// alert("The password entered is not valid");
+			modal.style.display = "block";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The password entered is not valid: ${pass.value}</p>`;
 		} else if (!confirmPassR || passR.value == 0) {
-			alert("password repeat error");
+			// alert("The passwords entered does not match");
+			modal.style.display = "block";
+			modalP.innerHTML = `<h2>ERROR</h2><p>The passwords entered does not match</p>`;
 		} else {
-			// fetch(url)
-			// 	.then(function (response) {
-			// 		return response.json();
-			// 	})
-			// 	.then(function (responseJson) {
-			// 		alert(responseJson.errors[0].msg);
-			// 	});
 			fetch(url)
 				.then(function (response) {
 					return response.json();
 				})
 				.then(function (responseJson) {
 					lStorage();
-					alert(responseJson.msg + "\nFirst name: " + fName.value + "\nLast name: " + lName.value +
-						"\nDNI: " + dni.value + "\nBirthday: " + birthday.value + "\nCellphone: " + phone.value +
-						"\nAddress: " + address.value + "\nLocation: " + location.value + "\nPostal code: " +
-						postalCode.value + "\nEmail: " + email.value + "\nPassword: " + pass.value);
-					// modal.style.display = "block";
-					// modalP.innerHTML = `<h3>${responseJson.msg}</h3><p>First name: ${fName.value}</p>
-					// <p>Last name: ${lName.value}<p>DNI: ${dni.value}</p><p>Birthday: ${birthday.value}</p>
-					// <p>Cellphone: ${phone.value}</p><p>Address: ${address.value}</p><p>Location: ${location.value}</p>
-					// <p>Postal code: ${postalCode.value}</p><p>Email: ${email.value}</p><p>Password: ${pass.value}</p>`
+					// alert(responseJson.msg + "\nFirst name: " + fName.value + "\nLast name: " + lName.value +
+					// 	"\nDNI: " + dni.value + "\nBirthday: " + birthday.value + "\nCellphone: " + phone.value +
+					// 	"\nAddress: " + address.value + "\nLocation: " + location.value + "\nPostal code: " +
+					// 	postalCode.value + "\nEmail: " + email.value + "\nPassword: " + pass.value);
+					modal.style.display = "block";
+					modalP.innerHTML = `<h2>${responseJson.msg}</h2><p>First name: ${fName.value}</p>
+					<p>Last name: ${lName.value}<p>DNI: ${dni.value}</p><p>Birthday: ${birthday.value}</p>
+					<p>Cellphone: ${phone.value}</p><p>Address: ${address.value}</p><p>Location: ${location.value}</p>
+					<p>Postal code: ${postalCode.value}</p><p>Email: ${email.value}</p><p>Password: ${pass.value}</p>`
 				})
 				.catch(function (error) {
-					alert("error");
+					// alert(error.errors[0].msg);
+					modal.style.display = "block";
+					modalP.innerHTML = error.errors[0].msg;
 				});
 		}
 	}
-
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	function lStorage() {
 		localStorage.setItem("name", fName.value);
@@ -586,7 +573,6 @@ window.onload = function () {
 		localStorage.setItem("password", pass.value); //pasword?
 		localStorage.setItem("password", passR.value); //repeat pass??
 	}
-
 	if (
 		localStorage.getItem("name") != null &&
 		localStorage.getItem("lastName") != null &&
@@ -611,17 +597,15 @@ window.onload = function () {
 		pass.value = localStorage.getItem("password");
 		passR.value = localStorage.getItem("password");
 	}
-
-	///////                                    MODALLLL ///////////////////////
+	//MODALLLL //
 	var modal = document.getElementById("myModal");
 	var span = document.getElementsByClassName("close")[0];
 	var modalP = document.getElementById("modalP");
 	// var submit = document.getElementById("submitId");   //ya lo tengo arriba
 
-
 	submit.onclick = function () {
 		modal.style.display = "block";
-		// modalP.textContent = responseJson.msg;
+		// modalP.innerHTML = responseJson.msg;
 	}
 	span.onclick = function () {
 		modal.style.display = "none";
@@ -631,5 +615,4 @@ window.onload = function () {
 			modal.style.display = "none";
 		}
 	}
-
 }
