@@ -257,12 +257,11 @@ window.onload = function () {
 		spanAddress.textContent = "";
 	}
 	function addressBlur() {
-		var validos = " abcdefghijklmnopqrstuvwxyz";
+		var validos = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		var valueAddress = address.value;
 		if (valueAddress.length < 5) {
 			confirmAddress = false;
-			spanAddress.textContent =
-				"The address should contain at least 5 characters";
+			spanAddress.textContent = "The address should contain at least 5 characters";
 			spanAddress.style.color = "red";
 			address.style.border = "2px solid red";
 		} else if (valueAddress.indexOf(" ") == -1) {
@@ -276,7 +275,6 @@ window.onload = function () {
 			var spaceSum = 0;
 			for (var i = 0; i < valueAddress.length; i++) {
 				var letter = valueAddress.substring(i, i + 1);
-				letter.toLowerCase();
 				var code = letter.charCodeAt();
 				if (letter == Number(letter) && code != 32) {
 					numberSum += 1;
@@ -286,6 +284,7 @@ window.onload = function () {
 					spaceSum += 1;
 				}
 			}
+			console.log(letterSum);
 			if (letterSum == 0 || numberSum == 0) {
 				confirmAddress = false;
 				spanAddress.textContent = "Address should contain letters and numbers";
@@ -308,19 +307,42 @@ window.onload = function () {
 		spanLocation.textContent = "";
 	}
 	function locationBlur() {
+		var validos = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		var validosNum = "0123456789"
 		var valueLocation = location.value;
 		if (valueLocation.length < 4) {
-			// console.log("more than 3 characters");
 			confirmLocation = false;
-			spanLocation.textContent = "Must contain more than 3 characters";
+			spanLocation.textContent = "Location should contain more than 3 characters";
 			spanLocation.style.color = "red";
 			location.style.border = "2px solid red";
 		} else {
-			confirmLocation = true;
-			location.style.border = "2px solid green";
+			var letterSum = 0;
+			var numberSum = 0;
+			for (var i = 0; i < valueLocation.length; i++) {
+				var letter = valueLocation.substring(i, i + 1);
+				if (validos.indexOf(letter) != -1) {
+					letterSum += 1;
+				} else if (validosNum.indexOf(letter) != -1) {
+					numberSum += 1;
+				}
+			}
+			console.log(letterSum);
+			if (letterSum == 0) {
+				confirmLocation = false;
+				spanLocation.textContent = "Location should contain letters";
+				spanLocation.style.color = "red";
+				location.style.border = "2px solid red";
+			} else if (letterSum + numberSum == valueLocation.length) {
+				confirmLocation = true;
+				location.style.border = "2px solid green";
+			} else {
+				confirmLocation = false;
+				spanLocation.textContent = "Location contain invalid characters";
+				spanLocation.style.color = "red";
+				location.style.border = "2px solid red";
+			}
 		}
 	}
-
 	///////////////////////////// POSTAL CODE
 	function postalCodeBlur() {
 		var valuePostalCode = postalCode.value;
@@ -430,7 +452,6 @@ window.onload = function () {
 		}
 	}
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
-
 	// var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
 	// url = url + "?name=" + fName.value + "&lastName=" + lName.value + "&dni=" + dni.value + "&dob=" + birthday.value
 	// + "&phone=" + phone.value + "&address=" + address.value + "&city=" + location.value + "&zip=" + postalCode.value
@@ -555,7 +576,7 @@ window.onload = function () {
 				.catch(function (error) {
 					// alert(error.errors[0].msg);
 					modal.style.display = "block";
-					modalP.innerHTML = error.errors[0].msg;
+					modalP.innerHTML = "<h2>ERROR</h2>Impossible to connect to the server";
 				});
 		}
 	}
@@ -597,7 +618,7 @@ window.onload = function () {
 		pass.value = localStorage.getItem("password");
 		passR.value = localStorage.getItem("password");
 	}
-	//MODALLLL //
+	// MODAL //
 	var modal = document.getElementById("myModal");
 	var span = document.getElementsByClassName("close")[0];
 	var modalP = document.getElementById("modalP");

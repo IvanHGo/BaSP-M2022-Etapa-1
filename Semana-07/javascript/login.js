@@ -101,7 +101,7 @@ window.onload = function () {
       .catch (function (error) {
         // alert(error.errors[0].msg);
         modal.style.display = "block";
-        modalP.innerHTML = error.errors[0].msg;
+        modalP.innerHTML = "<h2>ERROR</h2>Impossible to connect to the server";
       })
     }
   }
