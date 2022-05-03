@@ -1,26 +1,26 @@
 window.onload = function () {
 	var fName = document.getElementById("nameId");
-	var confirmFName = false;
+	var confirmFName = true;
 	var lName = document.getElementById("lNameId");
-	var confirmLName = false;
+	var confirmLName = true;
 	var dni = document.getElementById("dniId");
-	var confirmDni = false;
+	var confirmDni = true;
 	var birthday = document.getElementById("birthdayId");
-	var confirmBirthday = false;
+	var confirmBirthday = true;
 	var phone = document.getElementById("phoneId");
-	var confirmPhone = false;
+	var confirmPhone = true;
 	var address = document.getElementById("addressId");
-	var confirmAddress = false;
+	var confirmAddress = true;
 	var location = document.getElementById("locationId");
-	var confirmLocation = false;
+	var confirmLocation = true;
 	var postalCode = document.getElementById("postalCodeId");
-	var confirmPostalCode = false;
+	var confirmPostalCode = true;
 	var email = document.getElementById("emailId");
-	var confirmEmail = false;
+	var confirmEmail = true;
 	var pass = document.getElementById("passwordId");
-	var confirmPass = false;
+	var confirmPass = true;
 	var passR = document.getElementById("passwordRId");
-	var confirmPassR = false;
+	var confirmPassR = true;
 	var spanFName = document.getElementById("spanNameId");
 	var spanLName = document.getElementById("spanLNameId");
 	var spanDni = document.getElementById("spanDniId");
@@ -34,8 +34,9 @@ window.onload = function () {
 	var spanPassR = document.getElementById("spanPassRId");
 	var submit = document.getElementById("submitId");
 	var mailFormat = /[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,3}/;
-	var mailValid = false;
-	var passValid = false;
+	var mailValid = true;
+	var passValid = true;
+
 
 	fName.addEventListener("focus", fNameFocus);
 	fName.addEventListener("blur", fNameBlur);
@@ -450,67 +451,129 @@ window.onload = function () {
 	// + "&email=" + email.value + "&password=" + pass.value;
 	// console.log(url);
 
+	// function submitClick(e) {                                            //template literales
+	// 	e.preventDefault();
+	// 	lStorage();
+	// 	var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
+	// 	url =
+	// 		url +
+	// 		"?name=" + fName.value +
+	// 		"&lastName=" + lName.value +
+	// 		"&dni=" + dni.value +
+	// 		"&dob=" + birthday.value +
+	// 		"&phone=" + phone.value +
+	// 		"&address=" + address.value +
+	// 		"&city=" + location.value +
+	// 		"&zip=" + postalCode.value +
+	// 		"&email=" + email.value +
+	// 		"&password=" + pass.value;
+	// 	if (
+	// 		!confirmFName ||
+	// 		!confirmLName ||
+	// 		!confirmDni ||
+	// 		!confirmBirthday ||
+	// 		!confirmPhone ||
+	// 		!confirmAddress ||
+	// 		!confirmLocation ||
+	// 		!confirmPostalCode ||
+	// 		!confirmEmail ||
+	// 		!confirmPass ||
+	// 		!confirmPassR
+	// 	) {
+	// 		fetch(url)
+	// 			.then(function (response) {
+	// 				return response.json();
+	// 			})
+	// 			.then(function (responseJson) {
+	// 				alert(responseJson.errors[0].msg);
+	// 			});
+	// 	} else {
+	// 		fetch(url)
+	// 			.then(function (response) {
+	// 				return response.json();
+	// 			})
+	// 			.then(function (responseJson) {
+	// 				alert(responseJson.msg + "\nFirst name: " + fName.value + "\nLast name: " + lName.value +
+	// 					"\nDNI: " + dni.value + "\nBirthday: " + birthday.value + "\nCellphone: " + phone.value + "\nAddress: " +
+	// 					address.value + "\nLocation: " + location.value + "\nPostal code: " + postalCode.value + "\nEmail: " +
+	// 					email.value + "\nPassword: " + pass.value);
+	// 			});
+	// 	}
+	// }
+	//////////////////////////////////////////// abajo por si voy a cambiar el fetch, sino borrar
 	function submitClick(e) {                                            //template literales
-		lStorage();
+		e.preventDefault();
 		var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
 		url =
 			url +
-			"?name=" +
-			fName.value +
-			"&lastName=" +
-			lName.value +
-			"&dni=" +
-			dni.value +
-			"&dob=" +
-			birthday.value +
-			"&phone=" +
-			phone.value +
-			"&address=" +
-			address.value +
-			"&city=" +
-			location.value +
-			"&zip=" +
-			postalCode.value +
-			"&email=" +
-			email.value +
-			"&password=" +
-			pass.value;
-		e.preventDefault();
-		if (
-			!confirmFName ||
-			!confirmLName ||
-			!confirmDni ||
-			!confirmBirthday ||
-			!confirmPhone ||
-			!confirmAddress ||
-			!confirmLocation ||
-			!confirmPostalCode ||
-			!confirmEmail ||
-			!confirmPass ||
-			!confirmPassR
-		) {
+			"?name=" + fName.value +
+			"&lastName=" + lName.value +
+			"&dni=" + dni.value +
+			"&dob=" + birthday.value +
+			"&phone=" + phone.value +
+			"&address=" + address.value +
+			"&city=" + location.value +
+			"&zip=" + postalCode.value +
+			"&email=" + email.value +
+			"&password=" + pass.value;
+		if (!confirmFName || fName.value == 0) {
+			alert("name error");
+			modal.style.display = "block";
+			modalP.innerHTML = "hola prueba";
+		} else if (!confirmLName || lName.value == 0) {
+			alert("last name error");
+			modal.style.display = "block";
+			modalP.innerHTML = "hola prueba2222";
+		} else if (!confirmDni || dni.value == 0) {
+			alert("dni error");
+		} else if (!confirmBirthday || birthday.value == 0) {
+			alert("birthday error");
+		} else if (!confirmPhone || phone.value == 0) {
+			alert("phone error");
+		} else if (!confirmAddress || address.value == 0) {
+			alert("address error");
+		} else if (!confirmLocation || location.value == 0) {
+			alert("location error");
+		} else if (!confirmPostalCode || postalCode.value == 0) {
+			alert("postal code error");
+		} else if (!confirmEmail || email.value == 0) {
+			alert("email error");
+		} else if (!confirmPass || pass.value == 0) {
+			alert("password error");
+		} else if (!confirmPassR || passR.value == 0) {
+			alert("password repeat error");
+		} else {
+			// fetch(url)
+			// 	.then(function (response) {
+			// 		return response.json();
+			// 	})
+			// 	.then(function (responseJson) {
+			// 		alert(responseJson.errors[0].msg);
+			// 	});
 			fetch(url)
 				.then(function (response) {
 					return response.json();
 				})
 				.then(function (responseJson) {
-					alert(responseJson.errors[0].msg);
-				});
-		} else {
-			fetch(url)
-				.then(function (response) {
-					return response.json();
-				})
-				.then(function (responseJson) {       //template literales
+					lStorage();
 					alert(responseJson.msg + "\nFirst name: " + fName.value + "\nLast name: " + lName.value +
-						"\nDNI: " + dni.value + "\nBirthday: " + birthday.value + "\nCellphone: " + phone.value + "\nAddress: " +
-						address.value + "\nLocation: " + location.value + "\nPostal code: " + postalCode.value + "\nEmail: " +
-						email.value + "\nPassword: " + pass.value);
+						"\nDNI: " + dni.value + "\nBirthday: " + birthday.value + "\nCellphone: " + phone.value +
+						"\nAddress: " + address.value + "\nLocation: " + location.value + "\nPostal code: " +
+						postalCode.value + "\nEmail: " + email.value + "\nPassword: " + pass.value);
+					// modal.style.display = "block";
+					// modalP.innerHTML = `<h3>${responseJson.msg}</h3><p>First name: ${fName.value}</p>
+					// <p>Last name: ${lName.value}<p>DNI: ${dni.value}</p><p>Birthday: ${birthday.value}</p>
+					// <p>Cellphone: ${phone.value}</p><p>Address: ${address.value}</p><p>Location: ${location.value}</p>
+					// <p>Postal code: ${postalCode.value}</p><p>Email: ${email.value}</p><p>Password: ${pass.value}</p>`
+				})
+				.catch(function (error) {
+					alert("error");
 				});
 		}
 	}
 
-	function lStorage () {
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	function lStorage() {
 		localStorage.setItem("name", fName.value);
 		localStorage.setItem("lastName", lName.value);
 		localStorage.setItem("dni", dni.value);
@@ -520,10 +583,10 @@ window.onload = function () {
 		localStorage.setItem("city", location.value);
 		localStorage.setItem("zip", postalCode.value);
 		localStorage.setItem("email", email.value);
-		// localStorage.setItem("password", pass.value); //pasword?
-		// localStorage.setItem("password", .value); //repeat pass??
+		localStorage.setItem("password", pass.value); //pasword?
+		localStorage.setItem("password", passR.value); //repeat pass??
 	}
-	
+
 	if (
 		localStorage.getItem("name") != null &&
 		localStorage.getItem("lastName") != null &&
@@ -533,7 +596,8 @@ window.onload = function () {
 		localStorage.getItem("address") != null &&
 		localStorage.getItem("city") != null &&
 		localStorage.getItem("zip") != null &&
-		localStorage.getItem("email") != null
+		localStorage.getItem("email") != null &&
+		localStorage.getItem("password") != null
 	) {
 		fName.value = localStorage.getItem("name");
 		lName.value = localStorage.getItem("lastName");
@@ -544,10 +608,28 @@ window.onload = function () {
 		location.value = localStorage.getItem("city");
 		postalCode.value = localStorage.getItem("zip");
 		email.value = localStorage.getItem("email");
+		pass.value = localStorage.getItem("password");
+		passR.value = localStorage.getItem("password");
 	}
 
+	///////                                    MODALLLL ///////////////////////
+	var modal = document.getElementById("myModal");
+	var span = document.getElementsByClassName("close")[0];
+	var modalP = document.getElementById("modalP");
+	// var submit = document.getElementById("submitId");   //ya lo tengo arriba
 
 
-
+	submit.onclick = function () {
+		modal.style.display = "block";
+		// modalP.textContent = responseJson.msg;
+	}
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+	window.onclick = function (event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
 
 }

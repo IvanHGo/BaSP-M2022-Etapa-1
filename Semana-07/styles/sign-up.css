@@ -1,37 +1,45 @@
 /* GENERAL */
-header a:link, a:visited, a:active{
+header a:link,
+a:visited,
+a:active {
     text-decoration: none;
     color: #373867;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #373867;
     font-size: 16px;
     font-weight: 400;
 }
+
 span {
     font-family: 'Roboto', sans-serif;
     color: #373867;
     font-size: 10px;
     font-weight: 600;
 }
+
 /* HEADER */
 .header-text {
     padding: .5em 0 .5em 0;
     width: 100%;
     background-color: #373867;
 }
+
 .header-radium {
     padding-left: .3em;
     color: #46A37C;
     font-size: 3.75em;
     font-weight: bold;
 }
+
 .header-rocket {
     color: #AACF9B;
     font-size: 3.75em;
     font-weight: lighter;
 }
+
 .menu-bars {
     display: none;
     width: 2.5em;
@@ -45,6 +53,7 @@ main {
     height: 120vh;
     background-color: #C9C9D6;
 }
+
 h1 {
     width: 100%;
     padding-top: .5em;
@@ -55,6 +64,7 @@ h1 {
     font-size: 35px;
     line-height: 35px;
 }
+
 /* FORM */
 form {
     display: flex;
@@ -67,10 +77,12 @@ form {
     border-radius: 15px;
     background-color: #FFFFFF;
 }
+
 .form-block {
     display: flex;
     padding: .5em;
 }
+
 label {
     text-align: center;
     font-style: normal;
@@ -79,6 +91,7 @@ label {
     line-height: 16px;
     margin: 1em 0 .5em 0;
 }
+
 input {
     /* width: 100%; */
     /* width: 17em; */
@@ -90,14 +103,17 @@ input {
     border: 1px solid rgba(0, 0, 0, 0.5);
     background-color: #C4C4C4;
 }
+
 .input {
     width: 90%;
 }
+
 .email-block {
     display: flex;
     flex-direction: column;
     width: 87%;
 }
+
 .submit {
     padding: 1em 2em 1em 2em;
     margin-right: 1em;
@@ -106,19 +122,23 @@ input {
     border: 0;
     background-color: #AACE9B;
 }
+
 .reset {
     padding: 1em 2em 1em 2em;
     border-radius: 5px;
     width: 120px;
 }
+
 .buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 1em;
 }
+
 form p {
     padding-bottom: 1em;
 }
+
 /* FOOTER */
 footer {
     display: flex;
@@ -127,12 +147,14 @@ footer {
     margin-top: auto;
     background-color: #C4C4C4;
 }
+
 .footerp {
     align-self: center;
     text-align: center;
     width: 100%;
     font-size: 14px;
 }
+
 /* .correct{
     display: flex;
     color: green;
@@ -146,15 +168,69 @@ footer {
 .hide{
     display: none;
 } */
+/*                                       MODALLLLLLLLLLLLLLLLL   */
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
 @media screen and (max-width: 780px) {
     .form-block {
         display: flex;
         flex-direction: column;
         padding: 0;
     }
+
     .input {
         margin-bottom: .5em;
     }
+
     h1 {
         padding-bottom: .5em;
     }
