@@ -7,6 +7,9 @@ window.onload = function () {
   var mailFormat = /[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,3}/
   var mailValid = false;
   var passValid = false;
+  var modal = document.getElementById("myModal");
+	var span = document.getElementsByClassName("close")[0];
+	var modalP = document.getElementById("modalP");
 
   email.addEventListener("focus", emailFocus);
   email.addEventListener("blur", emailBlur);
@@ -105,12 +108,6 @@ window.onload = function () {
       })
     }
   }
-  //MODALLLL //
-	var modal = document.getElementById("myModal");
-	var span = document.getElementsByClassName("close")[0];
-	var modalP = document.getElementById("modalP");
-  // var submit = document.getElementById("submit"); //ya lo tengo arriba
-
 	submit.onclick = function () {
 		modal.style.display = "block";
 		// modalP.innerHTML = responseJson.msg;

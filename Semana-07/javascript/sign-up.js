@@ -36,6 +36,9 @@ window.onload = function () {
 	var mailFormat = /[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,3}/;
 	var mailValid = true;
 	var passValid = true;
+	var modal = document.getElementById("myModal");
+	var span = document.getElementsByClassName("close")[0];
+	var modalP = document.getElementById("modalP");
 
 	fName.addEventListener("focus", fNameFocus);
 	fName.addEventListener("blur", fNameBlur);
@@ -61,7 +64,7 @@ window.onload = function () {
 	passR.addEventListener("blur", passRBlur);
 	submit.addEventListener("click", submitClick);
 
-	///////////////////////////FIRST NAME
+	// FIRST NAME
 	function fNameBlur() {
 		var valueFName = fName.value;
 		if (valueFName.length < 4) {
@@ -96,7 +99,7 @@ window.onload = function () {
 		fName.style.border = "2px solid grey";
 		spanFName.textContent = "";
 	}
-	/////////////////////LAST NAME
+	// LAST NAME
 	function lNameBlur() {
 		var valueLName = lName.value;
 		if (valueLName.length < 4) {
@@ -131,7 +134,7 @@ window.onload = function () {
 		lName.style.border = "2px solid grey";
 		spanLName.textContent = "";
 	}
-	///////////////////////////////////DNI
+	// DNI
 	function dniBlur() {
 		var valueDni = dni.value;
 		if (valueDni.length < 8) {
@@ -167,7 +170,7 @@ window.onload = function () {
 		dni.style.border = "2px solid grey";
 		spanDni.textContent = "";
 	}
-	////////////////////////////// BIRTHDAY
+	// BIRTHDAY
 	function birthdayBlur() {
 		var valueBirthday = birthday.value;
 		// console.log(birthdayValue);
@@ -215,7 +218,7 @@ window.onload = function () {
 		birthday.style.border = "2px solid grey";
 		spanBirthday.textContent = "";
 	}
-	///////////////////CELLPHONE
+	// PHONE
 	function phoneBlur() {
 		var valuePhone = phone.value;
 		if (valuePhone.length != 10) {
@@ -251,7 +254,7 @@ window.onload = function () {
 		phone.style.border = "2px solid grey";
 		spanPhone.textContent = "";
 	}
-	//////////////////////////////ADDRESS
+	// ADDRESS
 	function addressFocus() {
 		address.style.border = "2px solid grey";
 		spanAddress.textContent = "";
@@ -301,7 +304,7 @@ window.onload = function () {
 			}
 		}
 	}
-	/////////////////////   LOCATION
+	// LOCATION
 	function locationFocus() {
 		location.style.border = "2px solid grey";
 		spanLocation.textContent = "";
@@ -343,7 +346,7 @@ window.onload = function () {
 			}
 		}
 	}
-	///////////////////////////// POSTAL CODE
+	// POSTAL CODE
 	function postalCodeBlur() {
 		var valuePostalCode = postalCode.value;
 		if (valuePostalCode.length < 4 || valuePostalCode.length > 5) {
@@ -378,7 +381,7 @@ window.onload = function () {
 		postalCode.style.border = "2px solid grey";
 		spanPostalCode.textContent = "";
 	}
-	//////////////////////////// EMAIL
+	// EMAIL
 	function emailFocus() {
 		email.style.border = "2px solid grey";
 		spanEmail.textContent = "";
@@ -395,7 +398,7 @@ window.onload = function () {
 			email.style.border = "2px solid green";
 		}
 	}
-	///////////////////////////// PASSWORD
+	// PASSWORD
 	function passFocus() {
 		pass.style.border = "2px solid grey";
 		spanPass.textContent = "";
@@ -428,7 +431,7 @@ window.onload = function () {
 		}
 		return letterSum !== 0 && numberSum !== 0;
 	}
-	///////////////////////////// REPEAT PASSWORD
+	// REPEAT PASSWORD
 	function passRFocus() {
 		passR.style.border = "2px solid grey";
 		spanPassR.textContent = "";
@@ -451,62 +454,7 @@ window.onload = function () {
 			passR.style.border = "2px solid green";
 		}
 	}
-	//////////////////////////////////////////////////////////////////////////////////////////////////////
-	// var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
-	// url = url + "?name=" + fName.value + "&lastName=" + lName.value + "&dni=" + dni.value + "&dob=" + birthday.value
-	// + "&phone=" + phone.value + "&address=" + address.value + "&city=" + location.value + "&zip=" + postalCode.value
-	// + "&email=" + email.value + "&password=" + pass.value;
 
-	// function submitClick(e) {                                            //template literales
-	// 	e.preventDefault();
-	// 	lStorage();
-	// 	var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
-	// 	url =
-	// 		url +
-	// 		"?name=" + fName.value +
-	// 		"&lastName=" + lName.value +
-	// 		"&dni=" + dni.value +
-	// 		"&dob=" + birthday.value +
-	// 		"&phone=" + phone.value +
-	// 		"&address=" + address.value +
-	// 		"&city=" + location.value +
-	// 		"&zip=" + postalCode.value +
-	// 		"&email=" + email.value +
-	// 		"&password=" + pass.value;
-	// 	if (
-	// 		!confirmFName ||
-	// 		!confirmLName ||
-	// 		!confirmDni ||
-	// 		!confirmBirthday ||
-	// 		!confirmPhone ||
-	// 		!confirmAddress ||
-	// 		!confirmLocation ||
-	// 		!confirmPostalCode ||
-	// 		!confirmEmail ||
-	// 		!confirmPass ||
-	// 		!confirmPassR
-	// 	) {
-	// 		fetch(url)
-	// 			.then(function (response) {
-	// 				return response.json();
-	// 			})
-	// 			.then(function (responseJson) {
-	// 				alert(responseJson.errors[0].msg);
-	// 			});
-	// 	} else {
-	// 		fetch(url)
-	// 			.then(function (response) {
-	// 				return response.json();
-	// 			})
-	// 			.then(function (responseJson) {
-	// 				alert(responseJson.msg + "\nFirst name: " + fName.value + "\nLast name: " + lName.value +
-	// 					"\nDNI: " + dni.value + "\nBirthday: " + birthday.value + "\nCellphone: " + phone.value + "\nAddress: " +
-	// 					address.value + "\nLocation: " + location.value + "\nPostal code: " + postalCode.value + "\nEmail: " +
-	// 					email.value + "\nPassword: " + pass.value);
-	// 			});
-	// 	}
-	// }
-	////////////////////////////////////////////
 	function submitClick(e) {
 		e.preventDefault();
 		var url = `https://basp-m2022-api-rest-server.herokuapp.com/signup?name=${fName.value}&lastName=${lName.value}
@@ -574,13 +522,13 @@ window.onload = function () {
 					<p>Postal code: ${postalCode.value}</p><p>Email: ${email.value}</p><p>Password: ${pass.value}</p>`
 				})
 				.catch(function (error) {
-					// alert(error.errors[0].msg);
+					// alert("ERROR:Impossible to connect to the server");
 					modal.style.display = "block";
 					modalP.innerHTML = "<h2>ERROR</h2>Impossible to connect to the server";
 				});
 		}
 	}
-	///////////////////////////////////////////////////////////////////////////////////////////////
+
 	function lStorage() {
 		localStorage.setItem("name", fName.value);
 		localStorage.setItem("lastName", lName.value);
@@ -591,8 +539,8 @@ window.onload = function () {
 		localStorage.setItem("city", location.value);
 		localStorage.setItem("zip", postalCode.value);
 		localStorage.setItem("email", email.value);
-		localStorage.setItem("password", pass.value); //pasword?
-		localStorage.setItem("password", passR.value); //repeat pass??
+		localStorage.setItem("password", pass.value);
+		localStorage.setItem("password", passR.value);
 	}
 	if (
 		localStorage.getItem("name") != null &&
@@ -618,15 +566,9 @@ window.onload = function () {
 		pass.value = localStorage.getItem("password");
 		passR.value = localStorage.getItem("password");
 	}
-	// MODAL //
-	var modal = document.getElementById("myModal");
-	var span = document.getElementsByClassName("close")[0];
-	var modalP = document.getElementById("modalP");
-	// var submit = document.getElementById("submitId");   //ya lo tengo arriba
-
+	// MODAL
 	submit.onclick = function () {
 		modal.style.display = "block";
-		// modalP.innerHTML = responseJson.msg;
 	}
 	span.onclick = function () {
 		modal.style.display = "none";
