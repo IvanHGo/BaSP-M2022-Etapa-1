@@ -44,4 +44,12 @@ This phase we deepen our learning with javascript tool and we learned about DOM 
 I hope to continue my learning and increase my abilities in this field.
 
 You can check my work in this link:
+
 https://ivanhgo.github.io/BaSP-M2022-Etapa-1/Semana-06/views/
+
+## Week-07 JavaScript Async y Storage
+This week's problem consists of extending the functionality of the forms created the previous week, making the information loaded in each form be sent to a Web Server using the Javascript Fetch method. Information will also be saved in LocalStorage to be used in the same forms when loading each page.
+
+Here is the link to my git hub pages to check the progress: 
+
+https://ivanhgo.github.io/BaSP-M2022-Etapa-1/Semana-07/views/
